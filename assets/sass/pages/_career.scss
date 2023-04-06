@@ -1,0 +1,462 @@
+.page--career {
+
+    .section {
+        &--job-hero {
+            position: relative;
+            max-width: 1270px;
+            height: 355px;
+            border-radius: 10px;
+            margin: 0 auto;
+            @media(max-width:767px) {
+                height: 275px;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            .company-logo {
+                position: absolute;
+                bottom: -40px;
+                left: 55px;
+                width: 127px;
+                height: 127px;
+                border-radius: 10px;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;  
+                }
+            }
+        }
+
+        &--job-info {
+            padding-top: 70px;
+            padding-bottom: 130px;
+            &__head {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+                .job--title {
+                    h2 {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                    
+                    .btn--apply {
+                        position: relative;
+                        padding-left: 30px;
+                        min-width: 165px;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 10px;
+                            left: 15px;
+                            width: 24px;
+                            height: 24px;
+                            background-size: 24px 24px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-image: url('../../images/suitcase_icon.png');
+
+                        }
+                    }
+
+                    .btn--linkedin {
+                        i {
+                            display: inline-block;
+                            padding-right: 8px;
+                        }
+                    }
+                }
+
+
+                .location {
+                    display: inline-block;
+                    position: relative;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 15px;
+                        height: 15px;
+                        background-size: 15px 15px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url('../../images/location_icon.png');
+                    }
+                }
+
+                .phone {
+                    display: inline-block;
+                    position: relative;
+                    font-size: 14px;
+                    padding-left: 30px;
+                    margin-left: 30px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 19px;
+                        height: 19px;
+                        background-size: 19px 19px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url('../../images/phone_icon.png');
+                    }
+                }
+            }
+
+            &__overview {
+                h3 {
+                    font-size: 30px;
+                }
+
+                h2,h3,h4,h5,h5 {
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 30px;
+                }
+
+                ul {
+                    list-style-type: disc;
+                    padding-left: 30px;
+                    margin-bottom: 30px;
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                ol {
+                    margin-bottom: 30px;
+                    padding-left: 30px;
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                a {
+                    color: inherit;
+                }
+
+                .job {
+                    &--listing {
+                        margin-bottom: 30px;
+                        .job--item {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            flex-direction: column;
+                            background: #FFFFFF;
+                            padding: 20px 35px;
+                            margin-bottom: 35px;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                            border-radius: 10px;
+
+                            &__head {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                @media(max-width:680px) {
+                                    display: block;
+                                }
+                            }
+
+                            &__logo {
+                                display: block;
+                                flex-basis: 70px;
+                                width: 70px;
+                                height: 70px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                @media(max-width:680px) {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                                @media(max-width:520px) {
+                                    display: block;
+                                    margin-bottom: 10px;
+                                }
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            &__title {
+                                padding-top: 5px;
+                                padding-left: 30px;
+                                flex-basis: calc(100% - 150px - 70px);
+                                width: calc(100% - 150px - 70px);
+                                @media(max-width:680px) {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+
+                                @media(max-width:680px) {
+                                    width: 100%;
+                                    padding: 0;
+                                }
+                                h2 {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    color: #000;
+                                    line-height: normal;
+                                    margin-bottom: 8px;
+                                }
+                                h3 {
+                                    font-size: 16px;
+                                    color: rgba(0, 0, 0, 0.3);
+                                }
+                            }
+
+                            &__salary {
+                                flex-basis: 150px;
+                                width: 150px;
+                                padding-top: 5px;
+                                @media(max-width:680px) {
+                                    flex-basis: 100%;
+                                    width: 100%;
+                                }
+                                h4 {
+                                    position: relative;
+                                    font-size: 20px;
+                                    padding-left: 38px;
+                                    margin: 0;
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-size: 22px 22px;
+                                        background-position: center;
+                                        background-image: url('../../images/drop_icon.png');
+                                    }
+                                }
+                            }
+
+
+                            &__info {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                margin-top: 25px;
+                                @media(max-width:680px) {
+                                   display: block;
+                                }
+                            }
+
+                            &__skills {
+                                flex-basis: 45%;
+                                width:  45%;
+                                @media(max-width:680px) {
+                                    flex-basis: 100%;
+                                    width:  100%;
+                                    margin-bottom: 10px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    padding: 4px 12px;
+                                    margin-right: 5px;
+                                    margin-bottom: 5px;
+                                    background: rgba(119, 2, 255, 0.05);
+                                    border-radius: 5px;
+                                }
+                            }
+
+                            &__location {
+                                flex-basis: 55%;
+                                width:  55%;
+                                text-align: right;
+
+                                @media(max-width:680px) {
+                                    flex-basis: 100%;
+                                    width:  100%;
+                                    text-align: left;
+                                }
+                                span {
+                                    display:inline-block;
+                                    position: relative;padding-left: 45px;
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 3px;
+                                        left: 10px;
+                                        width: 21px;
+                                        height: 21px;
+                                        background-size: 21px 21px;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                    &.location {
+                                        &:before {
+                                            background-image: url('../../images/location_icon.png');
+                                        }
+                                    }
+    
+                                    &.name {
+                                        &:before {
+                                            background-image: url('../../images/company_icon.png');
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .job--pagination {
+                            margin-top: 40px;
+                            .page-numbers {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #000;
+                                padding: 0 15px;
+                                @media(max-width:767px) {
+                                    padding: 0 9px;
+                                }
+                                &.prev,
+                                &.next {
+                                    display: inline-block;
+                                    background-color: $color-primary;
+                                    width: 60px;
+                                    height: 60px;
+                                    padding: 0px 9px;
+                                    text-align: center;
+                                    color: #fff;
+                                    font-size: 18px;
+                                    border-radius: 50px;
+                                    line-height: 56px;
+                                }
+                
+                                &.current {
+                                    color: $color-primary;
+                                }
+                
+                                &.prev {
+                                    margin-right: 10px;
+                                }
+                
+                                &.next {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+
+                .company {
+                    &--posted {
+                         margin-bottom: 40px;
+                        h3 {
+                            font-size: 20px;
+                            color: #000000;
+                        }
+                    }
+
+                    &--item {
+                        margin-bottom: 20px;
+                        input[type="checkbox"] {
+                            flex-basis: 15px;
+                            width: 15px;
+                            height: 15px;
+                            appearance: checkbox;
+                        }
+                        label {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            align-items: center;
+                            .image-holder {
+                                flex-basis: 55px;
+                                width: 55px;
+                                height: 55px;
+                                margin-left: 25px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            .text-holder {
+                                width: calc(100% - 15px - 55px);
+                                flex-basis:  calc(100% - 15px - 55px);
+                                padding-left: 25px;
+                                h4 {
+                                    font-size: 14px;
+                                    margin-bottom: 5px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .contact-us-cta {
+                    .image-holder {
+                        height: 230px;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        overflow: hidden;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .text-holder {
+                        background: linear-gradient(180deg, #281B36 30.21%, #252A3C 85.94%);
+                        padding: 40px;
+                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        h2 {
+                            font-size: 22px;
+                            line-height: normal;
+                            color: #fff;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            color: #fff;
+                        }
+
+                        .btn {
+                            background-color: #fff;
+                            color: #000;
+                            border-color: #fff;
+                            &:hover {
+                                background-color: $color-primary;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                
+
+                
+            }
+        }
+        
+    }
+}

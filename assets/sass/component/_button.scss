@@ -1,0 +1,26 @@
+.btn {
+    min-width: 150px;
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px 15px;
+    border: 1px solid $color-primary;
+    border-radius: 50px;
+    &--primary {
+        background-color: $color-primary;
+        color: #fff;
+        &:hover {
+            background-color: initial;
+            color: $color-primary;
+        }
+    }
+
+    &--secondary {
+        color: $color-primary;
+        &:hover {
+            background-color: $color-primary;
+            color: #fff;
+        }
+    }
+}

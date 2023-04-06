@@ -1,0 +1,371 @@
+.page--job-overview {
+
+    .section {
+        &--job-list {
+            background: #F2F2F2;
+            padding: 70px 0;
+            .normal-search {
+                position: relative;
+                display: flex;
+                flex-wrap: nowrap;
+                background-color: #fff;
+                height: 80px;
+                border-radius: 10px;
+                margin-bottom: 50px;
+                @media(max-width:580px) {
+                    display: block;
+                    height: auto;
+                }
+                .form-group {
+                    flex-basis: 45%;
+                    margin: 0;
+                    padding: 15px 35px;
+                    &:first-child {
+                        border-right: 1px solid rgba(0, 0, 0, 0.2);
+                    }
+
+                    select {
+                        appearance: none;
+                        border: 0;
+                    }
+
+
+                }
+                label {
+                    display: block;
+                    margin: 0;
+                    display: block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #000000;
+                }
+
+                .search--button {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    width: 115px;
+                    height: 69px;
+                    background-color: $color-primary;
+                    border-radius: 10px;
+                    @media(max-width:991px) {
+                        top: 15px;
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    @media(max-width:580px) {
+                        top: initial;
+                        bottom: 10px;
+                        right: 10px;
+                    }
+                    i {
+                        font-size: 24px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .advance-filter {
+                margin-bottom: 40px;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 27px;
+                }
+                .heading {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    
+                    
+                    .btn--clear {
+                        font-weight: 500;
+                        color: $color-primary;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        color: $color-primary;
+                        margin: 0;
+                    }
+                }
+
+                .search--location {
+                    position: relative;
+                    background-color: #fff;
+                    width: 100%;
+                    height: 47px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 16px;
+                        left: 20px;
+                        width: 12px;
+                        height: 12px;
+                        background-size: 12px 12px;
+                        background-image: url('../../images/location_icon.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    .search--box {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        padding: 5px 50px;
+                    }
+
+                    
+                }
+
+                .checkbox  {
+                    appearance: checkbox;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #000;
+                    display: inline-block;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+
+            &__results {
+                
+
+                .result-message {
+                    font-size: 16px;
+                    color: #000;
+                    margin-bottom: 35px;
+                    span {
+                        color: $color-primary;
+                    }
+                }
+                .job {
+                    &--listing {
+                        margin-bottom: 30px;
+                        .job--item {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            flex-direction: column;
+                            background: #FFFFFF;
+                            padding: 20px 35px;
+                            margin-bottom: 35px;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                            border-radius: 10px;
+
+                            &__head {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                @media(max-width:680px) {
+                                    display: block;
+                                }
+                            }
+
+                            &__logo {
+                                display: block;
+                                flex-basis: 70px;
+                                width: 70px;
+                                height: 70px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                @media(max-width:680px) {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                                @media(max-width:520px) {
+                                    display: block;
+                                    margin-bottom: 10px;
+                                }
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            &__title {
+                                padding-top: 5px;
+                                padding-left: 30px;
+                                flex-basis: calc(100% - 150px - 70px);
+                                width: calc(100% - 150px - 70px);
+                                @media(max-width:680px) {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+
+                                @media(max-width:680px) {
+                                    width: 100%;
+                                    padding: 0;
+                                }
+                                h2 {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    color: #000;
+                                    line-height: normal;
+                                    margin-bottom: 8px;
+                                }
+                                h3 {
+                                    font-size: 16px;
+                                    color: rgba(0, 0, 0, 0.3);
+                                }
+
+                                a {
+                                    color: #000;
+                                }
+                            }
+
+                            &__salary {
+                                flex-basis: 150px;
+                                width: 150px;
+                                padding-top: 5px;
+                                @media(max-width:680px) {
+                                    flex-basis: 100%;
+                                    width: 100%;
+                                }
+                                h4 {
+                                    position: relative;
+                                    font-size: 20px;
+                                    padding-left: 38px;
+                                    margin: 0;
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 22px;
+                                        height: 22px;
+                                        background-size: 22px 22px;
+                                        background-position: center;
+                                        background-image: url('../../images/drop_icon.png');
+                                    }
+                                }
+                            }
+
+
+                            &__info {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                margin-top: 25px;
+                                @media(max-width:680px) {
+                                   display: block;
+                                }
+                            }
+
+                            &__skills {
+                                flex-basis: 45%;
+                                width:  45%;
+                                @media(max-width:680px) {
+                                    flex-basis: 100%;
+                                    width:  100%;
+                                    margin-bottom: 10px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    padding: 4px 12px;
+                                    margin-right: 5px;
+                                    margin-bottom: 5px;
+                                    background: rgba(119, 2, 255, 0.05);
+                                    border-radius: 5px;
+                                }
+                            }
+
+                            &__location {
+                                flex-basis: 55%;
+                                width:  55%;
+                                text-align: right;
+
+                                @media(max-width:680px) {
+                                    flex-basis: 100%;
+                                    width:  100%;
+                                    text-align: left;
+                                }
+                                span {
+                                    display:inline-block;
+                                    position: relative;padding-left: 45px;
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 3px;
+                                        left: 10px;
+                                        width: 21px;
+                                        height: 21px;
+                                        background-size: 21px 21px;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                    &.location {
+                                        &:before {
+                                            background-image: url('../../images/location_icon.png');
+                                        }
+                                    }
+    
+                                    &.name {
+                                        &:before {
+                                            background-image: url('../../images/company_icon.png');
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .job--pagination {
+                            margin-top: 40px;
+                            .page-numbers {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #000;
+                                padding: 0 15px;
+                                @media(max-width:767px) {
+                                    padding: 0 9px;
+                                }
+                                &.prev,
+                                &.next {
+                                    display: inline-block;
+                                    background-color: $color-primary;
+                                    width: 60px;
+                                    height: 60px;
+                                    padding: 0px 9px;
+                                    text-align: center;
+                                    color: #fff;
+                                    font-size: 18px;
+                                    border-radius: 50px;
+                                    line-height: 56px;
+                                }
+                
+                                &.current {
+                                    color: $color-primary;
+                                }
+                
+                                &.prev {
+                                    margin-right: 10px;
+                                }
+                
+                                &.next {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+
+                .btn--loadmore {
+                    color: $color-primary;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    i {
+                        display: inline-block;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

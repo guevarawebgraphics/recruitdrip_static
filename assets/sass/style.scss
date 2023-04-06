@@ -1,0 +1,20 @@
+// Components
+@import "component/global";
+@import "component/typography";
+@import "component/color";
+@import "component/button";
+@import "component/header";
+@import "component/mobile";
+@import "component/footer";
+
+
+// Pages
+@import "pages/home.scss";
+@import "pages/about.scss";
+@import "pages/job-overview.scss";
+@import "pages/job-details.scss";
+@import "pages/blogs.scss";
+@import "pages/blog-details.scss";
+@import "pages/career.scss";
+@import "pages/contact.scss";
+@import "pages/pricing.scss";
